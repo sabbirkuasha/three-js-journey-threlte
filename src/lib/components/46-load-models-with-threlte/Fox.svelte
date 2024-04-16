@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { useAnimations } from '@react-three/drei';
+	// import { useAnimations } from '@react-three/drei';
 	import { T } from '@threlte/core';
 	import { useGltf, useSuspense, useGltfAnimations } from '@threlte/extras';
 	import { onMount } from 'svelte';
@@ -48,6 +48,6 @@
 
 {#await model then { scene }}
 	<T.Group {...$$restProps}>
-		<T is={scene} position={[-2.5, 0.0, 2.5]} scale={0.02} rotation-y={0.3} />
+		<T is={scene} position={[0, -1, 0]} scale={0.02} rotation-y={0.3} />
 	</T.Group>
 {/await}
