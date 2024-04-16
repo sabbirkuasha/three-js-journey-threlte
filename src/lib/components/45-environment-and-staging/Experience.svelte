@@ -55,8 +55,6 @@
 <SoftShadows samples={50} focus={5} />
 
 <!-- <T.Color args={['ivory']} attach="background" /> -->
-<!-- <Sky elevation={sunPosition} />
-
 <T.DirectionalLight
 	intensity={1.0}
 	position={[1, 2, 3]}
@@ -68,8 +66,12 @@
 	shadow.camera.top={5}
 	shadow.camera.right={5}
 	shadow.camera.bottom={-5}
-	shadow.camera.left={-5} 
->-->
+	shadow.camera.left={-5}
+/>
+<!-- <Sky elevation={sunPosition} />
+
+
+-->
 <!-- {#if directionalLight}
 		<Portal object={scene}>
 			<T.CameraHelper args={[directionalLight.shadow.camera]} />

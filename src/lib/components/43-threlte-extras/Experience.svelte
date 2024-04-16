@@ -3,14 +3,14 @@
 	import { OrbitControls, TransformControls, HTML, Text, Float } from '@threlte/extras';
 	import { onMount } from 'svelte';
 	import { ACESFilmicToneMapping, SRGBColorSpace, type Group, type Mesh } from 'three';
-	import MeshReflectorMaterial from '@react-three/drei';
+	// import MeshReflectorMaterial from '@react-three/drei';
 
 	let cubeMesh: Mesh, sphereMesh: Mesh;
 	let groupRef: Group;
 
 	const { camera, scene, renderer } = useThrelte();
 
-	extend({ TransformControls, MeshReflectorMaterial });
+	// extend({ TransformControls, MeshReflectorMaterial });
 
 	const { start, stop, started } = useFrame(
 		(ctx, deltaTime) => {
